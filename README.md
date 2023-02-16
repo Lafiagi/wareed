@@ -25,19 +25,22 @@ To get it running on your local machine, follow the steps below:
 
 Run the commands below in your terminal:
 
-```bash
+```
 git clone https://github.com/Lafiagi/wareed.git
 ```
 
-Change directory to fwareed:
+Change directory to wareed:
 
-```bash
+```
 cd wareed
+```
+## Setup a virtual environment
+```python3 -m venv /path/to/new/virtual/environment
 ```
 
 Install the requirements with the command below:
 
-```python
+```
 pip3 install -r requirements.txt
 ```
 
@@ -45,19 +48,19 @@ Rename the `.env_template` file to `.env` and update the values.
 
 Run the command below:
 
-```bash
+```
 python3 manage.py migrate
 ```
 
 Run the development server with:
 
-```bash
+```
 python3 manage.py runserver
 ```
 
 Start the celery worker on a different terminal session:
 
-```bash
+```
 celery -A wareed  worker --loglevel=debug
 ```
 
@@ -69,6 +72,6 @@ redis-server
 
 Launch your browser and navigate to the api docs:
 
-```bash
+```
 http://127.0.0.1:8000/docs/
 ```
