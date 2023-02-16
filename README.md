@@ -35,7 +35,8 @@ Change directory to wareed:
 cd wareed
 ```
 ## Setup a virtual environment
-```python3 -m venv /path/to/new/virtual/environment
+```
+python3 -m venv /path/to/new/virtual/environment
 ```
 
 Install the requirements with the command below:
